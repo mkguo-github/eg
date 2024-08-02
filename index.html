@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>秘密学习资料</title>
+    <style>
+        /* 弹窗样式 */
+        .popup {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
 
+        .popup-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="openPopupBtn">点击看真人无码高清视频</button>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <p>大聪明，不会真的以为有什么yellow小视频吧</p >
+            <p>少整点这玩应对身体不好！！！！！！！</p >
+        </div>
+    </div>
+    <script>
+        // JavaScript代码在这里
+        const openPopupBtn = document.getElementById('openPopupBtn');
+        const popup = document.getElementById('popup');
+        const closeBtn = document.querySelector('.close');
+
+        openPopupBtn.addEventListener('click', () => {
+            popup.style.display = 'block';
+        });
+
+        closeBtn.addEventListener('click', () => {
+            popup.style.display = 'none';
+        });
+
+        window.onclick = function(event) {
+            if (event.target === popup) {
+                popup.style.display = 'none';
+            }
+        };
+    </script>
+</body>
+</html>
